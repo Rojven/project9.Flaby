@@ -1,12 +1,10 @@
-/** .container
-    padding: 0 **/
 header
     min-height: 133px
     position: relative
     nav
         position: fixed
         width: 100%
-        z-index: 2
+        z-index: 1
     .logo
         padding-left: 0
     img
@@ -23,8 +21,11 @@ header
                 text-transform: uppercase
                 font-size: 17px
                 font-weight: 600
-                color: #ffffff
-                text-decoration: none      
+                color: $text_white
+                transition: 0.3s all 
+                &:hover
+                    text-decoration: none
+                    color: $hover_orange               
     button
         width: 110px
         height: 55px
@@ -35,7 +36,9 @@ header
         font-size: 17px
         font-weight: 600
         margin-top: 45px
-        color: #ffffff
+        color: $text_white
+        transition: 0.3s all
+        @include btn_hover
     .divider
         height: 1px
         width: 1140px
@@ -48,19 +51,18 @@ header
     position: absolute
     width: 100%
     top: 0
-    z-index: -2
     h1
         font-size: 40px
         font-weight: 500
         line-height: 0.7
-        color: #ffffff
+        color: $text_white
         text-transform: uppercase
         margin-top: 399px
     &_descr
         font-size: 26px
         font-weight: 300
         line-height: 1.54
-        color: #ffffff
+        color: $text_white
         margin-top: 40px
     &_btns
         display: flex
@@ -76,11 +78,171 @@ header
             border: none
             font-size: 20px
             font-weight: 600
-            color: #ffffff
+            color: $text_white
             margin-left: 29px
+            transition: 0.3s all
+            @include btn_hover
 .services
     min-height: 656px
     margin-top: 822px
+    padding: 77px 0 169px 0
+    @include headers
+    &_set
+        margin-top: 96px
+        padding: 20px 0
+        transition: 0.5s all
+        &:hover
+            cursor: pointer
+            box-shadow: 0 0 25px 5px rgba(73, 73, 73, 0.4)
+            border-radius: 10px 
+        &_icon
+            padding-left: 115px
+        &_plus
+            margin-top: 67px
+        &_header
+            font-size: 18px
+            font-weight: 600
+            line-height: 18px
+            text-align: center
+            margin-top: 45px
+            a
+                text-decoration: none
+                color: $text_grey
+                transition: 0.3s all
+                &:hover
+                    color: $hover_orange
+        &_descr
+            font-size: 15px
+            font-weight: 500
+            line-height: 1.86
+            text-align: center
+            color: $text_lightgrey
+            margin-top: 32px
+.features
+    min-height: 780px
+    background: url('../img/features_bg.jpg') center (center / cover) no-repeat
+    padding: 139px 0 187px 0
+    &_text
+        font-size: 22px
+        font-weight: 600
+        line-height: 22px
+        color: rgba(73, 73, 73, 0.4)
+    h2
+        font-size: 32px
+        font-weight: 600
+        line-height: 32px
+        color: $text_grey
+        margin-top: 23px
+    &_descr
+        font-size: 20px
+        font-weight: 500
+        line-height: 1.6
+        color: $text_lightgrey
+        margin-top: 36px
+    ul
+        margin-top: 67px
+        li
+            position: relative
+            list-style-type: none
+            font-size: 14px
+            font-weight: 500
+            color: $text_lightgrey
+            margin-top: 20px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                width: 13px
+                height: 13px
+                left: -39px
+                top: 3px
+                background: url('../icons/features_listpoint.png') center (center / cover) no-repeat
+    button
+        width: 150px
+        height: 50px
+        border-radius: 25px
+        box-shadow: 0px 10px 16px 0 rgba(102, 212, 244, 0.3)
+        background-color: #66d4f4
+        border: none
+        font-size: 14px
+        font-weight: 600
+        letter-spacing: 1.4px
+        color: #ffffff
+        text-transform: uppercase
+        margin-top: 52px
+        transition: 0.3s all
+        @include btn_hover
+.otherfeatures
+    min-height: 751px
+    padding: 55px 0 119px 0
+    .set1
+        margin-top: 123px
+    .set2
+        margin-top: 112px
+    &_text
+        position: relative
+        font-size: 18px
+        font-weight: 600
+        line-height: 18px
+        a
+            color: $text_grey
+            text-decoration: none
+            transition: 0.3s all
+            &:hover
+                color: $hover_orange
+    .one
+        &::before
+            @include services_icons
+            left: -50px
+            background: url('../icons/other_idea.png') center (center / cover) no-repeat
+    .two
+        &::before
+            @include services_icons
+            height: 32px
+            width: 41px
+            background: url('../icons/other_coding.png') center (center / cover) no-repeat
+    .three
+        &::before
+            @include services_icons
+            height: 33px
+            width: 46px
+            background: url('../icons/other_game.png') center (center / cover) no-repeat
+    .four
+        &::before
+            @include services_icons
+            height: 34px
+            width: 34px
+            background: url('../icons/other_design.png') center (center / cover) no-repeat
+    .five
+        &::before
+            @include services_icons
+            height: 40px
+            width: 45px
+            background: url('../icons/other_shopping.png') center (center / cover) no-repeat
+    .six
+        &::before
+            @include services_icons
+            height: 43px
+            width: 41px
+            background: url('../icons/other_bonus.png') center (center / cover) no-repeat
+    &_descr
+        font-size: 14px
+        font-weight: 500
+        line-height: 1.86
+        color: $text_lightgrey
+        margin-top: 24px
+.customers
+    min-height: 755px
+    padding: 49px 0 109px 0
+    background: url('../img/customer_bg.jpg') center (center / cover) no-repeat
+
+            
+        
+        
+                
+            
+
+
 
 
 
