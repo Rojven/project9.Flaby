@@ -1,10 +1,11 @@
 header
     min-height: 133px
     position: relative
-    nav
-        position: fixed
-        width: 100%
-        z-index: 1
+    z-index: 5
+    /** nav
+        position: fixed 
+        width: 100% 
+        z-index: 5 **/
     .logo
         padding-left: 0
     img
@@ -37,6 +38,7 @@ header
         font-weight: 600
         margin-top: 45px
         color: $text_white
+        outline: none
         transition: 0.3s all
         @include btn_hover
     .divider
@@ -90,8 +92,9 @@ header
     &_set
         margin-top: 96px
         padding: 20px 0
-        transition: 0.5s all
+        transition: 0.4s all
         &:hover
+            transform: scale(1.1)
             cursor: pointer
             box-shadow: 0 0 25px 5px rgba(73, 73, 73, 0.4)
             border-radius: 10px 
@@ -171,6 +174,7 @@ header
         text-transform: uppercase
         margin-top: 52px
         transition: 0.3s all
+        outline: none
         @include btn_hover
 .otherfeatures
     min-height: 751px
@@ -232,9 +236,304 @@ header
         color: $text_lightgrey
         margin-top: 24px
 .customers
+    position: relative
     min-height: 755px
     padding: 49px 0 109px 0
     background: url('../img/customer_bg.jpg') center (center / cover) no-repeat
+    z-index: 1
+    &_box
+        position: relative
+        z-index: 4
+        margin-top: 118px
+        width: 730px
+        height: 351px
+        background-color: $text_white
+        border-radius: 10px
+        box-shadow: 0 0 51px 0 rgba(0, 0, 0, 0.08)
+        border: solid 1px rgba(0, 0, 0, 0.08)
+        transition: 0.3s all
+        &:hover
+            transform: scale(1.02)
+            box-shadow: 0 0 51px 0 rgba(255, 137, 3, 0.4)
+        h2
+            font-size: 20px
+            font-weight: 600
+            text-align: center
+            color: $text_grey
+            line-height: 20px
+            margin: 0
+            margin-top: 83px
+        &_text
+            font-size: 15px
+            font-weight: 500
+            text-align: center
+            color: $text_lightgrey
+            line-height: 15px
+            margin-top: 4px
+        &_descr
+            font-size: 18px
+            font-weight: 500
+            line-height: 1.67
+            text-align: center
+            color: $text_lightgrey
+            margin: 0 auto
+            margin-top: 35px
+            width: 571px
+        img
+            position: absolute
+            top: -45px
+            left: 321px
+    &_scroll
+        display: flex
+        width: 200px
+        justify-content: space-around
+        cursor: pointer
+        margin-top: 39px
+        margin-left: 440px
+        font-size: 18px
+        font-weight: bold
+        &_text1
+            transition: 2s all
+            color: $text_grey
+            &:active
+                color: $text_lightgrey
+                transition: 0s
+        &_text2
+            transition: 2s all
+            color: $text_grey
+            &:active
+                color: $text_lightgrey
+                transition: 0s
+    &_box2
+        position: absolute
+        bottom: 23px
+        left: -25px
+        width: 790px
+        height: 309px
+        background-color: $text_white
+        border-radius: 10px
+        box-shadow: 0 0 51px 0 rgba(0, 0, 0, 0.08)
+        border: solid 1px rgba(0, 0, 0, 0.08)
+        z-index: 3
+        transition: 0.3s all
+        &:hover
+            box-shadow: 0 0 51px 0 rgba(255, 137, 3, 0.4)
+    &_box3
+        position: absolute
+        width: 843px
+        height: 257px
+        background-color: $text_white
+        border-radius: 10px
+        box-shadow: 0 0 51px 0 rgba(0, 0, 0, 0.08)
+        border: solid 1px rgba(0, 0, 0, 0.08)
+        z-index: 2
+        top: -309px
+        left: 42px
+        transition: 0.3s all
+        &:hover
+            box-shadow: 0 0 51px 0 rgba(255, 137, 3, 0.4)
+.resourse
+    min-height: 631px
+    &_up
+        font-size: 22px
+        font-weight: 600
+        color: rgba(73, 73, 73, 0.4)
+        margin-top: 179px
+        line-height: 22px
+    h2
+        font-size: 32px
+        font-weight: 600
+        line-height: 32px
+        color: $text_grey
+        margin-top: 28px
+    &_down
+        font-size: 20px
+        font-weight: 500
+        line-height: 1.6
+        color: $text_lightgrey
+        margin-top: 25px
+    &_descr
+        font-size: 14px
+        font-weight: 500
+        line-height: 1.86
+        color: $text_lightgrey
+        margin-top: 32px
+    img
+        margin-top: 162px
+.pricing
+    min-height: 1000px
+    padding: 68px 0 121px 0
+    background: url('../img/pricing_bg.jpg') center (center / cover) no-repeat
+    &_block
+        display: flex
+        justify-content: space-between
+        margin-top: 125px
+        &_box
+            width: 320px
+            height: 581px
+            background: url('../img/pricing_table.jpg') center (center / cover) no-repeat
+            border-radius: 20px
+            border: solid 1px rgba(0, 0, 0, 0.04)
+            transition: 0.4s all
+            &:hover
+                transform: scale(1.1)
+                box-shadow: 0 0 51px 0 rgba(92, 149, 161, 0.33)
+            img
+                padding: 45px 116px 0 113px
+            &_text
+                font-size: 16px
+                font-weight: 600
+                line-height: normal
+                text-align: center
+                color: $text_grey
+                margin-top: 59px
+            &_price
+                display: flex
+                justify-content: center
+                font-size: 72px
+                font-weight: 600
+                line-height: 72px
+                text-align: center
+                color: #2eb0ec
+                span
+                    font-size: 30px
+                    font-weight: 500
+            ul
+                margin-top: 48px
+                padding: 0
+                li
+                    list-style-type: none
+                    font-size: 14px
+                    font-weight: 500
+                    line-height: 2.29
+                    text-align: center
+                    color: $text_lightgrey
+            button
+                width: 150px
+                height: 50px
+                border-radius: 25px
+                background-color: #66d4f4
+                border: none
+                font-size: 14px
+                font-weight: 600
+                letter-spacing: 1.4px
+                color: $text_white
+                text-transform: uppercase
+                text-align: center
+                display: block
+                margin: 0 auto
+                transition: 0.3s all
+                outline: none
+                @include btn_hover
+.subscribe
+    min-height: 598px
+    padding: 69px 0 0 0
+    &_box
+        padding: 0 370px
+        margin-top: 67px
+        input
+            display: block
+            width: 370px
+            margin-top: 26px
+            height: 75px
+            border-radius: 37.5px
+            box-shadow: 0px 8px 16px 0 rgba(92, 149, 161, 0.3)
+            border: solid 1px rgba(0, 0, 0, 0.03)
+            background-color: $text_white
+            font-size: 16px
+            font-weight: bold
+            text-align: center
+            color: rgba(80, 80, 80, 0.75)
+            outline: none
+        button
+            width: 370px
+            height: 75px
+            margin-top: 26px
+            border-radius: 37.5px
+            box-shadow: 0px 10px 16px 0 rgba(102, 212, 244, 0.3)
+            background-color: #66d4f4 
+            font-size: 16.5px
+            font-weight: 600
+            letter-spacing: 1.65px
+            text-align: center
+            color: $text_white
+            text-transform: uppercase
+            border: none
+            outline: none
+            transition: 0.3s all
+            @include btn_hover
+    &_divider
+        width: 1170px
+        height: 1px
+        background-color: #dfdfdf 
+        margin-top: 110px
+footer
+    min-height: 421px
+    padding: 53px 0 43px 0
+    .text
+        font-size: 14px
+        font-weight: 500
+        line-height: 2
+        color: $text_lightgrey
+        margin-top: 20px
+    .social
+        display: flex
+        width: 100px
+        justify-content: space-between
+        margin-top: 23px
+        &_item
+            width: 30px
+            height: 30px
+            border-radius: 100%
+            background-color: #da4835
+            text-decoration: none
+            color: $text_white
+            text-align: center
+    .menu
+        display: flex
+        justify-content: space-between
+        &_column
+            &_header
+                font-size: 20px
+                font-weight: 600
+                color: $text_grey
+            ul
+                margin-top: 46px
+                padding: 0
+                li
+                    list-style-type: none
+                    font-size: 14px
+                    font-weight: 500
+                    line-height: 2
+                    color: $text_lightgrey
+                    cursor: pointer
+                    transition: 0.3s all
+                    &:hover
+                        color: $hover_orange
+    .divider
+        width: 1170px
+        height: 1px
+        background-color: #dfdfdf 
+        margin-top: 76px
+    .line
+        display: flex
+        margin-top: 40px
+        &_text
+            font-size: 14px
+            font-weight: 500
+            color: $text_lightgrey
+            span
+                font-weight: 600
+                color: $text_grey
+        &_divider
+            width: 1px
+            height: 22px
+            background-color: $text_lightgrey
+            margin: 0 17px
+
+
+        
+
 
             
         
