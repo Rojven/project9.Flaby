@@ -1,0 +1,237 @@
+@media (max-width: 1200px)
+    header
+        ul
+            li
+                a
+                    font-size: 15px
+        button
+            font-size: 15px
+@media (max-width: 991px)
+    header
+        ul
+            li
+                a
+                    font-size: 13px
+                    transition: 1s all
+                    &:hover
+                        color: $text_white
+                    &:active
+                        color: $hover_orange
+                        transition: 0s
+        .divider
+            width: 720px
+        button
+            font-size: 10px
+            margin-top: 52px
+            height: 44px
+            transition: 1s all
+            outline: none
+            &:hover
+                color: $text_white
+                background-color: rgba(71, 158, 225, 0.8)
+            &:active
+                background-color: $hover_orange
+                transition: 0s
+    .promo
+        h1
+            font-size: 35px
+        &_descr
+            font-size: 20px
+        &_btns
+            img
+                width: 197px
+                height: 85px
+            &_2
+                width: 190px
+                height: 73px
+                transition: 1s all
+                &:hover
+                    color: $text_white
+                    background-color: rgba(71, 158, 225, 0.8)
+                &:active
+                    background-color: $hover_orange
+                    transition: 0s
+    .services
+        &_set
+            transition: 1s all
+            &:hover
+                transform: scale(1)
+            &:active
+                transform: scale(1.1)
+                cursor: pointer
+                box-shadow: 0 0 25px 5px rgba(73, 73, 73, 0.4)
+                border-radius: 10px
+                transition: 0s 
+            &_icon
+                padding-left: 50px
+    .features
+        button
+            transition: 1s all
+            &:hover
+                color: $text_white
+                background-color: rgba(71, 158, 225, 0.8)
+            &:active
+                background-color: $hover_orange
+                transition: 0s
+    .customers
+        &_box
+            img
+                left: 178px
+            &_descr
+                font-size: 16px
+                width: 436px
+        &_box2
+            width: 511px
+        &_box3
+            width: 549px
+            left: 15px
+        &_scroll
+            margin-left: 242px
+    .resourse
+        h2 
+            margin-top: 18px
+        &_down
+            margin-top: 17px
+            font-size: 18px
+        &_descr
+            margin-top: 15px
+            font-size: 13px
+        img
+            transform: scale(0.7)
+    .pricing
+        &_block
+            &_box
+                width: 214px
+                transition: 2s all
+                &:hover
+                    transform: scale(1)
+                &:active
+                    transform: scale(1.1)
+                    box-shadow: 0 0 51px 0 rgba(92, 149, 161, 0.33)
+                    border-radius: 20px
+                    transition: 0s
+                img
+                    padding: 45px 116px 0 60px
+                button
+                    transition: 1s all
+                    &:hover
+                        color: $text_white
+                        background-color: rgba(71, 158, 225, 0.8)
+                    &:active
+                        background-color: $hover_orange
+                        transition: 0s
+    .subscribe
+        &_box
+            padding: 0px 160px
+        &_divider
+            width: 720px
+    footer
+        .divider
+            width: 720px
+@media (max-width: 767px)
+    header
+        img
+            display: none
+        ul
+            padding: 0
+            a 
+                font-size: 16px
+        button
+            margin-top: 10px
+        .divider
+            margin-top: 21px
+    .promo
+        h1
+            font-size: 32px
+        &_descr
+            font-size: 17px
+        &_btns
+            flex-direction: column
+            img
+                width: 170px
+                height: 70px
+            &_2
+                width: 162px
+                height: 60px
+                margin-left: 4px
+                margin-top: 10px
+    .services
+        &_set
+            &_icon
+                padding-left: 186px
+    .customers
+        &_box
+            img
+                left: 208px
+            &_descr
+                font-size: 16px
+                width: 436px
+        &_box2
+            width: 560px
+        &_box3
+            width: 600px
+            left: -43px
+        &_scroll
+            margin-left: 145px
+    .resourse
+        img
+            transform: scale(0.9)
+            margin-top: 59px
+    .pricing
+        &_block
+            &_box
+                width: 155px
+                img
+                    padding: 45px 44px 0 21px
+                    transform: scale(0.8) 
+                button
+                    width: 125px
+                    height: 47px
+    .subscribe
+        &_box
+            padding: 0px 69px
+        &_divider
+            width: 510px
+    footer
+        .social
+            justify-content: flex-end
+            margin: 18px 0 10px 0
+            width: 509px
+        .divider
+            width: 510px    
+        .line
+            &_divider
+                height: 39px
+@media (max-width: 575px)
+    header
+        ul
+            margin-top: 8px
+            li
+                a
+                    font-size: 17px
+        button
+            font-size: 17px
+        .divider
+            margin-top: 10px
+            width: 510px
+    .promo
+        h1
+            font-size: 35px
+            margin-top: 260px
+        &_descr
+            font-size: 22px
+            width: 398px
+        &_btns
+            flex-direction: column
+            img
+                width: 300px
+                height: 110px
+            &_2
+                width: 282px
+                height: 86px
+                margin-left: 7px
+                margin-top: 10px
+    .services
+        &_set
+            &_icon
+                padding-left: 205px
